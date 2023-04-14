@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brtled/collapse-header",
+  "version": "0.1.0",
+  "title": "折叠",
+  "description": "显示可折叠的标题",
+  "category": "theme",
+  "textdomain": "brtled",
+  "icon": "heading",
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "source": "html",
+      "selector": "h3"
+    },
+    "iconColor": {
+      "type": "string"
+    }
+  },
+  "parent": [
+    "brtled/collapse"
+  ],
+  "supports": {
+    "reusable": false,
+    "html": false,
+    "color": {
+      "text": true,
+      "background": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": false
+    },
+    "spacing": {
+      "margin": false,
+      "padding": true,
+      "blockGap": false
+    }
+  },
+  "editorScript": "file:./index.js"
+}

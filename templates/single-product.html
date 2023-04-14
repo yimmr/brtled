@@ -1,0 +1,33 @@
+<!-- wp:template-part {"slug":"header","className":"site-header"} /-->
+
+<!-- wp:post-content /-->
+
+<!-- wp:group {"tagName":"section","className":"is-style-section-padding","layout":{"type":"constrained"}} -->
+<section class="wp-block-group is-style-section-padding"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:heading {"className":"is-style-default","fontSize":"large"} -->
+<h2 class="is-style-default has-large-font-size">Related products</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"right","textColor":"primary"} -->
+<p class="has-text-align-right has-primary-color has-text-color"><a href="/">More »</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:query {"queryId":2,"query":{"perPage":4,"pages":1,"offset":0,"postType":"product","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":false,"inherit":false,"related":true},"displayLayout":{"type":"flex","columns":4},"namespace":"brtled/related-posts","align":"wide","layout":{"type":"constrained"}} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"align":"wide","className":"is-style-product-grid-item"} -->
+<!-- wp:post-featured-image {"isLink":true} /-->
+
+<!-- wp:post-title {"isLink":true} /-->
+
+<!-- wp:brtled/product-meta /-->
+<!-- /wp:post-template -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph {"placeholder":"添加当查询返回无结果时所要显示的文本或区块。"} -->
+<p></p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></section>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

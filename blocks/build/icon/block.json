@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brtled/icon",
+  "version": "0.1.0",
+  "title": "图标",
+  "description": "显示 Bootstrap 图标",
+  "category": "theme",
+  "textdomain": "brtled",
+  "icon": "smiley",
+  "attributes": {
+    "name": {
+      "type": "string",
+      "default": "emoji-smile"
+    }
+  },
+  "supports": {
+    "html": false,
+    "color": {
+      "text": true,
+      "background": false
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": false
+    },
+    "spacing": {
+      "margin": [
+        "left",
+        "right"
+      ],
+      "padding": false,
+      "blockGap": false
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./index.css"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brtled/collapse-content",
+  "version": "0.1.0",
+  "title": "折叠内容",
+  "description": "显示可折叠的内容",
+  "category": "theme",
+  "textdomain": "brtled",
+  "icon": "text",
+  "parent": [
+    "brtled/collapse"
+  ],
+  "supports": {
+    "reusable": false,
+    "html": false,
+    "color": {
+      "text": true,
+      "background": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": false
+    },
+    "spacing": {
+      "margin": false,
+      "padding": true,
+      "blockGap": false
+    }
+  },
+  "editorScript": "file:./index.js"
+}

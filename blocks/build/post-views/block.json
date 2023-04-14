@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brtled/post-views",
+  "version": "0.1.0",
+  "title": "浏览量",
+  "description": "显示文章的浏览量",
+  "category": "theme",
+  "textdomain": "brtled",
+  "icon": "visibility",
+  "attributes": {
+    "hasLabel": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "supports": {
+    "html": false,
+    "color": {
+      "text": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    }
+  },
+  "editorScript": "file:./index.js"
+}

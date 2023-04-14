@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brtled/term-description",
+  "version": "0.1.0",
+  "title": "术语描述",
+  "description": "显示术语的描述",
+  "parent": [
+    "brtled/term-query"
+  ],
+  "category": "theme",
+  "textdomain": "brtled",
+  "icon": "text",
+  "usesContext": [
+    "termId",
+    "name",
+    "taxonomy"
+  ],
+  "supports": {
+    "html": false,
+    "color": {
+      "gradients": true,
+      "text": true,
+      "link": false
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    }
+  },
+  "editorScript": "file:./index.js"
+}

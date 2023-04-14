@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brtled/swiper-slide",
+  "version": "0.1.0",
+  "title": "滑动项目",
+  "description": "滑动器的单个自定义内容",
+  "category": "theme",
+  "textdomain": "brtled",
+  "icon": "embed-photo",
+  "parent": [
+    "brtled/swiper"
+  ],
+  "supports": {
+    "reusable": false,
+    "html": false,
+    "color": {
+      "text": true,
+      "background": true,
+      "link": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    },
+    "spacing": {
+      "padding": true
+    }
+  },
+  "editorScript": "file:./index.js"
+}

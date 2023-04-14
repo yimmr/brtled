@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brtled/product-filter",
+  "version": "0.1.0",
+  "title": "产品筛选器",
+  "description": "用于筛选产品列表",
+  "category": "theme",
+  "textdomain": "brtled",
+  "icon": "filter",
+  "supports": {
+    "multiple": false,
+    "html": false,
+    "align": true,
+    "color": {
+      "text": true,
+      "link": true,
+      "background": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

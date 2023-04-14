@@ -1,0 +1,114 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brtled/swiper",
+  "version": "0.1.0",
+  "title": "滑动器",
+  "description": "显示一组可滑动的自定义内容",
+  "category": "theme",
+  "textdomain": "brtled",
+  "icon": "slides",
+  "attributes": {
+    "images": {
+      "type": "array",
+      "default": []
+    },
+    "autoplay": {
+      "type": "object",
+      "default": {
+        "delay": 3000
+      }
+    },
+    "pagination": {
+      "type": "boolean",
+      "default": true
+    },
+    "navigation": {
+      "type": "boolean",
+      "default": true
+    },
+    "paginationBulletSize": {
+      "type": "string",
+      "default": "0.75rem"
+    },
+    "navigationSize": {
+      "type": "string",
+      "default": "1.5rem"
+    },
+    "paginationColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "navigationColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "loop": {
+      "type": "boolean",
+      "default": true
+    },
+    "centeredSlides": {
+      "type": "boolean",
+      "default": true
+    },
+    "allowTouchMove": {
+      "type": "boolean",
+      "default": true
+    },
+    "setWrapperSize": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoHeight": {
+      "type": "boolean",
+      "default": false
+    },
+    "imageHeightFull": {
+      "type": "boolean",
+      "default": true
+    },
+    "speed": {
+      "type": "number",
+      "default": 300
+    },
+    "effect": {
+      "type": "string",
+      "enum": [
+        "slide",
+        "fade",
+        "coverflow",
+        "flip",
+        "cards"
+      ],
+      "default": "slide"
+    },
+    "direction": {
+      "type": "string",
+      "enum": [
+        "horizontal",
+        "vertical"
+      ],
+      "default": "horizontal"
+    },
+    "width": {
+      "type": "string"
+    },
+    "height": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false,
+    "color": {
+      "text": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "script": "file:./script.js"
+}

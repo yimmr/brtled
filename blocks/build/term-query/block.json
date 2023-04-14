@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brtled/term-query",
+  "version": "0.1.0",
+  "title": "术语查询",
+  "description": "查询指定分类法下的术语",
+  "category": "theme",
+  "textdomain": "brtled",
+  "icon": "tag",
+  "providesContext": {
+    "termId": "termId",
+    "taxonomy": "taxonomy",
+    "name": "name"
+  },
+  "attributes": {
+    "query": {
+      "type": "object",
+      "default": {
+        "parent": null,
+        "offset": 0,
+        "number": 0,
+        "taxonomy": "category",
+        "hide_empty": true,
+        "orderby": "none",
+        "order": "asc",
+        "inherit": false,
+        "expand": false
+      }
+    },
+    "displayLayout": {
+      "type": "object",
+      "default": {
+        "type": "list"
+      }
+    },
+    "namespace": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": true,
+    "color": {
+      "gradients": true,
+      "link": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

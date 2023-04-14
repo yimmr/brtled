@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "brtled/variants",
+  "version": "0.1.0",
+  "title": "About card",
+  "category": "theme",
+  "icon": "smiley",
+  "description": "变体",
+  "textdomain": "brtled",
+  "editorScript": "file:./index.js",
+  "script": "file:./script.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
